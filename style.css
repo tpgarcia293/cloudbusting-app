@@ -1,0 +1,112 @@
+h1 {
+  color: #ffbada;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-family: "Oleo Script", cursive;
+}
+.searchBar {
+  width: 400px;
+  margin: 10px;
+}
+.searchButton {
+  position: relative;
+  left: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 1px;
+  border: 1px solid #f9f871;
+  background: #ffbada;
+  color: #fff;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+  cursor: pointer;
+}
+.searchButton:hover {
+  background: white;
+  color: #ffbada;
+  border: 1px solid #f9f871;
+}
+.currentCityButton {
+  position: relative;
+  left: 10px;
+  border-radius: 4px;
+  margin: 1px;
+  border: 1px solid #4defc9;
+  background: #4defc9;
+  color: #fff;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+  cursor: pointer;
+}
+.currentCityButton:hover {
+  background: white;
+  color: #4defc9;
+  border: 1px solid #4defc9;
+}
+.city {
+  font-family: "Lily Script One", cursive;
+  font-size: 30px;
+  color: #338ba7;
+  margin-left: 10px;
+}
+.date {
+  margin-left: 10px;
+  color: #4defc9;
+  font-size: 20px;
+  margin-left: 10px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+.weather-app {
+  border: 1px solid #f9f871;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-image: url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+.current-temperature-icon {
+  position: relative;
+  font-size: 60px;
+  color: #ffbada;
+  left: 85px;
+  top: -15px;
+}
+.temperature {
+  position: relative;
+  left: 85px;
+  top: -15px;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #474555;
+}
+.units {
+  position: relative;
+  top: -50px;
+  left: 85px;
+}
+.high-low {
+  position: relative;
+  left: 85px;
+  top: -15px;
+  margin-left: 20px;
+  text-align: right;
+  color: #474555;
+}
+.days {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Lily Script One", cursive;
+  color: #474555;
+}
+.fas {
+  font-size: 50px;
+  color: #f9f871;
+  -webkit-text-stroke: 0px;
+}
