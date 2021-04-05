@@ -46,12 +46,13 @@ h1 {
 .city {
   font-family: "Lily Script One", cursive;
   font-size: 30px;
-  color: #338ba7;
+  color: #f9f871;
   margin-left: 10px;
 }
-.date {
+.date,
+#description {
   margin-left: 10px;
-  color: #4defc9;
+  color: #338ba7;
   font-size: 20px;
   margin-left: 10px;
 }
@@ -70,25 +71,25 @@ li {
   max-width: 800px;
   background-image: url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
-.current-temperature-icon {
+#icon {
   position: relative;
-  font-size: 60px;
+  font-size: 30px;
   color: #ffbada;
-  left: 85px;
+  left: 150px;
   top: -15px;
 }
 .temperature {
   position: relative;
-  left: 85px;
-  top: -15px;
+  left: 250px;
+  top: -112px;
   font-size: 60px;
   letter-spacing: 2px;
   color: #474555;
 }
 .units {
   position: relative;
-  top: -50px;
-  left: 85px;
+  top: -150px;
+  left: 250px;
 }
 .high-low {
   position: relative;
@@ -98,12 +99,13 @@ li {
   text-align: right;
   color: #474555;
 }
-.days {
-  text-align: center;
+#conditions {
+  position: relative;
+  left: 150px;
+}
+.weather-forecast {
   margin-top: 20px;
-  padding: 10px;
-  font-family: "Lily Script One", cursive;
-  color: #474555;
+  text-align: center;
 }
 .fas {
   font-size: 50px;

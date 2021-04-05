@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloudbusting App</title>
-    <link rel="stylesheet" href="src/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/675f25f766.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
 </head>
 
 </head>
@@ -52,16 +52,18 @@
                 <div class="col-md-6">
                     <ul>
                         <li>
-                            <div class="current-temperature-icon" id="icon"><i class="fas fa-sun"></div></i>
-                            <span class="temperature"></span><span class="units"><a href="#" id="celcius">°C</a> | <a
-                                    href="#" id="farenheit">°F</a></span>
-                        </li>
-                        <li>
-                            <span class="high-low">H:° / L: °</span>
+                            <div class="clearfix weather-temperature">
+                                <img src="" alt="" id="icon" class="float-left" />
+                                <div class="float-left">
+                                    <span class="temperature"></span>
+                                    <span class="units"><a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a></span>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-6">
+                    <div id="conditions">
                     <ul>
                         <li>
                             Wind: <span id="wind"></span>mph
@@ -70,55 +72,11 @@
                             Humidity: <span id="humidity"></span>%
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <br />
-            <div class="row">
-                <div class="col-sm">
-                    <div class="days" class="monday">
-                        Monday
-                        <br />
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        37° / 34°
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="days" class="tuesday">
-                        Tuesday
-                        <br />
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        37° / 34°
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="days" class="wednesday">
-                        Wednesday
-                        <br />
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        37° / 34°
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="days" class="thursday">
-                        Thursday
-                        <br />
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        37° / 34°
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="days" class="friday">
-                        Friday
-                        <br />
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        37° / 34°
-                    </div>
-                </div>
+            <div class="weather-forecast" id="forecast">
             </div>
         </div>
     </div>
