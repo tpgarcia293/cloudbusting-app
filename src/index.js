@@ -71,6 +71,8 @@ function showWeather(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -130,4 +132,3 @@ let celciusLink = document.querySelector("#celcius");
 celciusLink.addEventListener("click", showCelciusTemperature);
 
 searchCity("Philadelphia");
-displayForecast();
