@@ -5,7 +5,7 @@ h1 {
   font-family: "Oleo Script", cursive;
 }
 .searchBar {
-  width: 400px;
+  width: 50%;
   margin: 10px;
 }
 .searchButton {
@@ -67,8 +67,8 @@ li {
   border: 1px solid #f9f871;
   border-radius: 4px;
   padding: 10px;
-  margin: 20px auto;
-  max-width: 900px;
+  margin: 0px auto;
+  max-width: 800px;
   background-image: url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
 #icon {
@@ -106,6 +106,9 @@ li {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+}
+.weather-forecast-date {
+  font-family: "Oleo Script", cursive;
 }
 .fas {
   font-size: 50px;
